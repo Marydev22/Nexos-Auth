@@ -1,3 +1,4 @@
+import "react-native-url-polyfill/auto";
 import type { Session } from "@supabase/supabase-js";
 import type { Href } from "expo-router";
 import {
