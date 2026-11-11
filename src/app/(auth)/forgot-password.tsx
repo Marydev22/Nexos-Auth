@@ -27,7 +27,8 @@ export default function ForgotPasswordScreen() {
     setLoading(false);
 
     if (resetError) {
-      setError('No se pudo enviar el enlace. Inténtalo de nuevo.');
+      console.error('[sendPasswordRecovery error]:', resetError);
+      setError(resetError.message || 'No se pudo enviar el enlace. Inténtalo de nuevo.');
       return;
     }
 
